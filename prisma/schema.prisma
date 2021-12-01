@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Noticias {
+  id        Int      @id @default(autoincrement())
+  fecha     DateTime
+  autor     String
+  titulo    String
+  contenido String
+  resena    String
+  campo     Int
+  otro    String
+}
