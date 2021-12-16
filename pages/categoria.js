@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Categoria() {
     return (
@@ -15,28 +16,31 @@ export default function Categoria() {
                 <div className="box-container">
 
                     <div className="box">
-                        <img src="images/category-1.jpg" alt="" />
+                        <Image src="/images/category-1.jpg" alt="Landscape picture" width={200} height={200} layout='intrinsic'  />
+
                         <h3>bungee jump</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
                         <a href="#" className="btn">read more</a>
                     </div>
 
                     <div className="box">
-                        <img src="images/category-2.jpg" alt="" />
+                    <Image src="/images/category-2.jpg" alt="Landscape picture" width={200} height={200} layout='intrinsic' /> 
                         <h3>zip lines</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
                         <a href="#" className="btn">read more</a>
                     </div>
 
                     <div className="box">
-                        <img src="images/category-3.jpg" alt="" />
+                    <Image src="/images/category-3.jpg" alt="Landscape picture" width={200} height={200} layout='intrinsic' /> 
+                       
                         <h3>Canoeing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
                         <a href="#" className="btn">read more</a>
                     </div>
 
                     <div className="box">
-                        <img src="images/category-4.jpg" alt="" />
+                    <Image src="/images/category-4.jpg" alt="Landscape picture" width={200} height={200} layout='intrinsic' /> 
+                        
                         <h3>kayaking</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
                         <a href="#" className="btn">read more</a>

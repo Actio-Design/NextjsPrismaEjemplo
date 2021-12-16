@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Slider from '../componentes/Slider'
+import Categoria from './categoria'
 
 export default function Home() {
   return (
@@ -17,43 +19,7 @@ export default function Home() {
       </section>
 
 
-      <section className="category">
-
-        <h1 className="heading">adventure idea!</h1>
-
-        <div className="box-container">
-
-          <div className="box">
-            <img src="images/category-1.jpg" alt="" />
-            <h3>bungee jump</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
-            <a href="#" className="btn">read more</a>
-          </div>
-
-          <div className="box">
-            <img src="images/category-2.jpg" alt="" />
-            <h3>zip lines</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
-            <a href="#" className="btn">read more</a>
-          </div>
-
-          <div className="box">
-            <img src="images/category-3.jpg" alt="" />
-            <h3>Canoeing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
-            <a href="#" className="btn">read more</a>
-          </div>
-
-          <div className="box">
-            <img src="images/category-4.jpg" alt="" />
-            <h3>kayaking</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
-            <a href="#" className="btn">read more</a>
-          </div>
-
-        </div>
-
-      </section>
+      <Categoria />
 
 
       <section className="about" id="about">
@@ -82,7 +48,8 @@ export default function Home() {
 
             <div className="swiper-slide slide">
               <div className="image">
-                <img src="images/product-1.jpg" alt="" />
+              <Image src="/images/product-1.jpg" alt="Landscape picture" width={300} height={300} layout='intrinsic' />
+               
                 <div className="icons">
                   <a href="#" className="fas fa-shopping-cart"></a>
                   <a href="#" className="fas fa-eye"></a>
@@ -104,7 +71,8 @@ export default function Home() {
 
             <div className="swiper-slide slide">
               <div className="image">
-                <img src="images/product-2.jpg" alt="" />
+              <Image src="/images/product-2.jpg" alt="Landscape picture" width={300} height={300} layout='intrinsic' />
+                
                 <div className="icons">
                   <a href="#" className="fas fa-shopping-cart"></a>
                   <a href="#" className="fas fa-eye"></a>
@@ -126,7 +94,7 @@ export default function Home() {
 
             <div className="swiper-slide slide">
               <div className="image">
-                <img src="images/product-3.jpg" alt="" />
+              <Image src="/images/product-3.jpg" alt="Landscape picture" width={300} height={300} layout='intrinsic' />
                 <div className="icons">
                   <a href="#" className="fas fa-shopping-cart"></a>
                   <a href="#" className="fas fa-eye"></a>
@@ -148,7 +116,8 @@ export default function Home() {
 
             <div className="swiper-slide slide">
               <div className="image">
-                <img src="images/product-4.jpg" alt="" />
+              <Image src="/images/product-4.jpg" alt="Landscape picture" width={300} height={300} layout='intrinsic' />
+               
                 <div className="icons">
                   <a href="#" className="fas fa-shopping-cart"></a>
                   <a href="#" className="fas fa-eye"></a>
@@ -170,7 +139,7 @@ export default function Home() {
 
             <div className="swiper-slide slide">
               <div className="image">
-                <img src="images/product-5.jpg" alt="" />
+              <Image src="/images/product-5.jpg" alt="Landscape picture" width={300} height={300} layout='intrinsic' />
                 <div className="icons">
                   <a href="#" className="fas fa-shopping-cart"></a>
                   <a href="#" className="fas fa-eye"></a>
@@ -192,7 +161,7 @@ export default function Home() {
 
             <div className="swiper-slide slide">
               <div className="image">
-                <img src="images/product-6.jpg" alt="" />
+              <Image src="/images/product-6.jpg" alt="Landscape picture" width={300} height={300} layout='intrinsic' />
                 <div className="icons">
                   <a href="#" className="fas fa-shopping-cart"></a>
                   <a href="#" className="fas fa-eye"></a>
